@@ -7,12 +7,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
-
 @Controller
 public class SpaDayController {
 
     @GetMapping
-    public String customerForm () {
+    public String customerForm() {
         return "serviceSelection";
     }
 

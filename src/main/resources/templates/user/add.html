@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+</head>
+    <body>
+        <form method="post" action = "/user">
+            <div class = 'form-group'>
+                <span th:text = '${error}'></span>
+            </div>
+            <div class = 'form-group'>
+                <label>
+                    <input type = 'text' placeholder = 'Username' name= 'username' class = 'form-control' th:value = '${username}' required>
+                </label>
+            </div>
+            <div class = 'form-group'>
+                <label>
+                    <input type = 'email' placeholder = 'Email' name = 'email' class = 'form-control' th:value = '${email}' required>
+                </label>
+            </div>
+            <div class = 'form-group'>
+                <label>
+                    <input type = 'password' placeholder = 'Password' name = 'password' class = 'form-control' required>
+                </label>
+            </div>
+            <div class = 'form-group'>
+                <label>
+                    <input type = 'password' placeholder = 'Confirm Password' name = 'verify' class = 'form-control' required>
+                </label>
+            </div>
+            <input type = 'submit' value = 'Register' class = 'btn btn-success'>
+        </form>
+    </body>
+</html>
